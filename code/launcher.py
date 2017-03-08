@@ -255,8 +255,9 @@ def launch(args, defaults, description):
 
     agent = None
 
-    if parameters.method == 'ot':
+    if not parameters.close2:
         print 'transition length is ', parameters.transition_length, 'transition range is', parameters.transition_range
+    if parameters.method == 'ot':
         if parameters.nn_file is None:
             network = q_network.DeepQLearner(defaults.RESIZED_WIDTH,
                                              defaults.RESIZED_HEIGHT,

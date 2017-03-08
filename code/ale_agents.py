@@ -32,12 +32,13 @@ class OptimalityTightening(object):
         self.epsilon_min = epsilon_min
         self.epsilon_decay = epsilon_decay
         self.replay_memory_size = replay_memory_size
-        self.exp_dir = exp_pref + '_' + '_len' + str(transitions_sequence_length) + '_r' + str(transition_range) + \
-                       '_' + str(weight_max) + '_' + str(weight_min)
+        self.exp_dir = exp_pref + '_' + str(weight_max) + '_' + str(weight_min)
         if late2:
             self.exp_dir += '_l2'
         if close2:
-            self.exp_dir += '_cl2'
+            self.exp_dir += '_close2'
+        else:
+            self.exp_dir += '_len' + str(transitions_sequence_length) + '_r' + str(transition_range)
         if two_train:
             self.exp_dir += '_TTR'
 
