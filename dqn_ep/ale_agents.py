@@ -22,7 +22,7 @@ class OptimalityTightening(object):
                  epsilon_decay, replay_memory_size, exp_pref, update_frequency,
                  replay_start_size, rng, transitions_sequence_length, transition_range, penalty_method,
                  weight_min, weight_max, weight_decay_length, two_train=False, late2=True, close2=True, verbose=False,
-                 double=False):
+                 double=False, save_pkl=True):
         self.double_dqn = double
         self.network = q_network
         self.num_actions = q_network.num_actions
@@ -60,6 +60,7 @@ class OptimalityTightening(object):
         self.late2 = late2
         self.close2 = close2
         self.same_update = False
+        self.save_pkl = save_pkl
 
         self.start_index = 0
         self.terminal_index = None
@@ -482,10 +483,10 @@ class OptimalityTightening(object):
                                 np.mean(self.loss_averages)))
 
     def finish_epoch(self, epoch):
-        net_file = open(self.exp_dir + '/network_file_' + str(epoch) + \
-                        '.pkl', 'w')
-        cPickle.dump(self.network, net_file, -1)
-        net_file.close()
+        if self.save_pkl:
+            net_file = open(self.exp_dir + '/network_file_' + str(epoch) + '.pkl', 'w')
+            cPickle.dump(self.network, net_file, -1)
+            net_file.close()
         this_time = time.time()
         self.total_time = this_time-self.program_start_time
         self.epoch_time = this_time-self.last_count_time

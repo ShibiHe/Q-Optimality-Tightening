@@ -159,6 +159,9 @@ def process_args(args, defaults, description):
     parser.add_argument('--two-train', dest="two_train",
                         action='store_true', default=False,
                         help='doing two gradient descents per update')
+    parser.add_argument('--save-pkl', dest="save_pkl",
+                        action='store_true', default=False,
+                        help='saving network parameters')
     parser.add_argument('--weight-min', dest='weight_min',
                         type=float, default=0.8,
                         help='weight min for penalty method')
@@ -295,7 +298,8 @@ def launch(args, defaults, description):
                                                 parameters.late2,
                                                 parameters.close2,
                                                 parameters.verbose,
-                                                parameters.double_dqn)
+                                                parameters.double_dqn,
+                                                parameters.save_pkl)
 
     experiment = ale_experiment.ALEExperiment(ale, agent,
                                               defaults.RESIZED_WIDTH,
