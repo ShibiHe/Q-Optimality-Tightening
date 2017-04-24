@@ -180,9 +180,6 @@ def process_args(args, defaults, description):
     parser.add_argument('--verbose', dest="verbose",
                         type=int, default=0,
                         help='1: check correctness,')
-    parser.add_argument('--useR', dest="use_R",
-                        action='store_true', default=False,
-                        help='use discounted future return')
 
     parameters = parser.parse_args(args)
     if parameters.experiment_prefix is None:
