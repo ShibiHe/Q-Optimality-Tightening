@@ -88,21 +88,21 @@ Since we never did grid search on hyperparameters, we expect finding better sett
   year = {2017},
 }
 ```
-[running1]: gopher_running.png
-[running2]: star_gunner_running.png
-[frostbite_cl2_1]: frostbite_cl2_1.png
-[frostbite_cl2_2]: frostbite_cl2_2.png
-[frostbite_r15_1]: frostbite_r15_1.png
-[frostbite_r15_2]: frostbite_r15_2.png
-[gopher]: gopher.png
-[hero]: hero.png
-[star_gunner]: star_gunner.png
-[zaxxon]: zaxxon.png
-[A3C]: a3c_fig.png
-[beam_rider]: beam_rider_time.png
-[breakout]: breakout_time.png
-[pong]: pong_time.png
-[qbert]: qbert_time.png
-[space_invaders]: space_invaders_time.png
-[rescale]: rescale.png
-[frame]: frame.png
+[running1]: figures/gopher_running.png
+[running2]: figures/star_gunner_running.png
+[frostbite_cl2_1]: figures/frostbite_cl2_1.png
+[frostbite_cl2_2]: figures/frostbite_cl2_2.png
+[frostbite_r15_1]: figures/frostbite_r15_1.png
+[frostbite_r15_2]: figures/frostbite_r15_2.png
+[gopher]: figures/gopher.png
+[hero]: figures/hero.png
+[star_gunner]: figures/star_gunner.png
+[zaxxon]: figures/zaxxon.png
+[A3C]: figures/a3c_fig.png
+[beam_rider]: figures/beam_rider_time.png
+[breakout]: figures/breakout_time.png
+[pong]: figures/pong_time.png
+[qbert]: figures/qbert_time.png
+[space_invaders]: figures/space_invaders_time.png
+[rescale]: figures/rescale.png
+[frame]: figures/frame.png
