@@ -70,10 +70,10 @@ Our results:
 From the observations, our method always outperforms 1,2 and 4 threads A3C and achieves similar results as 8 threads A3C. To be noticed, these five games chosen by A3C paper are not our method's specialties. Our method would definitely achieve much better performance if we run tests on games that our method is good at.
 
 # Explain
-Gradients are also rescaled so that their magnitudes are comparable with or without penalty
+### Gradients are also rescaled so that their magnitudes are comparable with or without penalty
 ![rescale]
 
-About frames
+### About frames
 ![frame]
 
 # Comments
