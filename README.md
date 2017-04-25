@@ -1,5 +1,5 @@
 # Learning-to-play-in-a-day-Optimality-Tightening
-This is my raw implementation to paper [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://openreview.net/pdf?id=rJ8Je4clg). I plan to release a fully-functioned version soon.
+This is my implementation to paper [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://openreview.net/pdf?id=rJ8Je4clg). I plan to release a fully-functioned version soon.
 
 # Dependencies
 * Numpy
