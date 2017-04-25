@@ -1,4 +1,4 @@
-# Learning-to-play-in-a-day-Optimality-Tightening
+# Q-Optimality-Tightening
 This is my implementation to paper [Learning to Play in a Day: Faster Deep Reinforcement Learning by Optimality Tightening](https://openreview.net/pdf?id=rJ8Je4clg). 
 
 # Dependencies
@@ -77,7 +77,7 @@ From the observations, our method always outperforms 1,2 and 4 threads A3C and a
 ![frame]
 
 # Comments
-Since we never did grid search on hyperparameters, we expect finding better settings or initializations to further improve the results. More informed strategies regarding the choice of constraints are possible as well since we may expect lower bounds in the more distant future to have a larger impact early in the training. In contrast once the algorithm is almost converged we may expect lower bounds close to the considered time-step to have bigger impact. More complex penalty functions and sophisticated optimization approaches may yield even better results than the ones we report in the following.
+Since we never did grid search on hyperparameters, we expect finding better settings or initializations to further improve the results. More informed strategies regarding the choice of constraints are possible as well since we may expect lower bounds in the more distant future to have a larger impact early in the training. In contrast once the algorithm is almost converged we may expect lower bounds close to the considered time-step to have bigger impact. More complex penalty functions and sophisticated optimization approaches may yield even better results than the ones we reported yet.
 
 # Please cite our paper at
 ```
