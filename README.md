@@ -10,7 +10,7 @@ This is my implementation to paper [Learning to Play in a Day: Faster Deep Reinf
 * Lasagne
 * ALE or gym
 
-Readers might refer to <https://github.com/spragunr/deep_q_rl> for installation information. However, I suggest readers installing all the packages using virtual environment. Please make sure the version of Theano are compatible with the one of Lasagne.
+Readers might refer to <https://github.com/spragunr/deep_q_rl> for installation information. However, I suggest readers installing all the packages using virtual environment. Please make sure the version of Theano is compatible with the one of Lasagne.
 
 # Running
 ```
