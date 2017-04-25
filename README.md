@@ -27,8 +27,10 @@ Running gopher with randomly sampled bounds. Default: 4 out of 10 upper bounds a
 I have already provided 62 game roms.
 
 If everything is configured correctly, the running should be like this:
-![running1]
-![running2]
+
+<img src="figures/gopher_running.png" width="320" height="450" />
+<img src="figures/star_gunner_running.png" width="320" height="450" />
+
 steps per second is usually between 105 to 140 using one Titan X. The GPU Occupation is about 30 percent which means our code still has huge space of improvement.
 
 
@@ -88,8 +90,7 @@ Since we never did grid search on hyperparameters, we expect finding better sett
   year = {2017},
 }
 ```
-[running1]: figures/gopher_running.png
-[running2]: figures/star_gunner_running.png
+
 [frostbite_cl2_1]: figures/frostbite_cl2_1.png
 [frostbite_cl2_2]: figures/frostbite_cl2_2.png
 [frostbite_r15_1]: figures/frostbite_r15_1.png
