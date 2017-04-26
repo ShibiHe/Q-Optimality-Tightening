@@ -41,20 +41,20 @@ First I will show two figures runned on frostbite with ```--close2```:
 Two other figures runned with sampling 4 bounds out of 15 are below:
 ![frostbite_r15_1]
 ![frostbite_r15_2]
-> In Nature paper, frostbite's 200M score is 328.3
+> frostbite's 200M baseline is 328.3
 
 Some other games are displayed here:
 ![gopher]
-> In Nature paper, gopher's 200M score is 8520
+> gopher's 200M baseline is 8520
 
 ![hero]
-> In Nature paper, hero's 200M score is 19950
+> hero's 200M baseline is 19950
 
 ![star_gunner]
-> In Nature paper, star_gunner's 200M score is 57997
+> star_gunner's 200M baseline is 57997
 
 ![zaxxon]
-> In Nature paper, zaxxon's 200M score is 4977
+> zaxxon's 200M baseline is 4977
 
 Finally, we can roughly compare our method with state-of-art method [A3C](https://arxiv.org/pdf/1602.01783). Our method is using 1 CPU thread and 1 GPU (GPU Occupation is 30%) while A3C is using multiple CPU threads.
 
